@@ -533,6 +533,10 @@ ul {
   color: #727272;
 }
 
+.designers__info__image {
+  width: auto;
+}
+
 .shapes {
   position: absolute;
   right: 0;
