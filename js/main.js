@@ -58,11 +58,23 @@ const init = () => {
     });
   } else {
     document.addEventListener('swiped-left', () => {
-      showNextSlide();
+      if (helperInput.value = 1) {
+        helperInput.value = 0;
+        showNextSlide();
+        setTimeout(() => {
+          helperInput.value = 1;
+        }, 1500);
+      }
     });
 
     document.addEventListener('swiped-right', () => {
-      showPrevSlide();
+      if (helperInput.value = 1) {
+        helperInput.value = 0;
+        showPrevSlide();
+        setTimeout(() => {
+          helperInput.value = 1;
+        }, 1500);
+      }
     });
   }
 
