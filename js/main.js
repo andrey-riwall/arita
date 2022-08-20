@@ -58,7 +58,8 @@ const init = () => {
     });
   } else {
     document.addEventListener('swiped-left', () => {
-      if (helperInput.value = 1) {
+      console.log(helperInput.value);
+      if (helperInput.value == '1') {
         helperInput.value = 0;
         showNextSlide();
         setTimeout(() => {
@@ -68,7 +69,8 @@ const init = () => {
     });
 
     document.addEventListener('swiped-right', () => {
-      if (helperInput.value = 1) {
+      console.log(helperInput.value);
+      if (helperInput.value == '1') {
         helperInput.value = 0;
         showPrevSlide();
         setTimeout(() => {
